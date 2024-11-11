@@ -7,7 +7,7 @@ const pages = {
 
     <br><br><br><br>
     <h2>Ornella Zanoni</h2><br>
-    <h2>Javier Velichco</h2>`,
+    <h2>Javier Velichco</h2><br><br><br><br>`,
     next: [{text: "Ve a la página 2", page: 2}]
 },
 
@@ -56,7 +56,7 @@ Al final de este recorrido, si tienes éxito, podrás descubrir nuestro secreto 
       <br>
 <p>Si no tienes opción de ir a la izquierda ve a la página 5.<br>
 
-Si hay opción de ir a la izquierda ve a la página 6.<br></p>`,
+Si hay opción de ir a la izquierda ve a la página 6.</p><br><br><br>`,
     next: [
         {text: "Página 5", page: 5, condition: "noIzquierda"}, 
         {text: "Página 6", page: 6, condition: "siIzquierda"}
@@ -71,7 +71,7 @@ Si hay opción de ir a la izquierda ve a la página 6.<br></p>`,
 
 Si no hay opción de ir a la derecha ir a la página 7. <br>
 
-Si hay opción de ir a la derecha ir a la página 60. <br>`,
+Si hay opción de ir a la derecha ir a la página 60. <br><br><br><br>`,
 
     next: [
         {text: "Página 7", page: 7, condition: "hayPlaza"},
@@ -84,7 +84,7 @@ Si hay opción de ir a la derecha ir a la página 60. <br>`,
 
 Si hay una plaza frente a vos, ve a la página 8 <br>
 
-Si no hay una plaza frente a ti ve a la página 20 <br>`,
+Si no hay una plaza frente a ti ve a la página 20 <br><br><br>`,
     next: [
         {text: "Página 8.", page: 8, condition: "siplaza"},
         {text: "Página 20.", page: 20, condition: "noplaza"}
@@ -98,7 +98,7 @@ Si no hay una plaza frente a ti ve a la página 20 <br>`,
 
 Si no ves un auto rojo avanzá a la página 9<br>
 
-Si ves un auto rojo avanzá a la página 10<br>`,
+Si ves un auto rojo avanzá a la página 10<br><br><br>`,
    next: [
         {text: "Página 9.", page: 9, condition: "noAutoRojo"},
         {text: "Página 10.", page: 10, condition: "siAutoRojo"}
@@ -125,7 +125,7 @@ Si ves un auto rojo avanzá a la página 10<br>`,
     text: `Aparentemente no te están siguiendo, dobla a la derecha y avanza.<br>
      Es un barrio peligroso, el olvido acecha detrás de cada esquina.<br>
     Hay una vieja leyenda que habla de un árbol frutal que devuelve los recuerdos  y está por aquí cerca.
-     ¿Podrás encontrarlo?`,
+     ¿Podrás encontrarlo?<br><br><br>`,
     next: [
         {text: "Ve a la página 11.", page: 11}
     ]
@@ -134,7 +134,7 @@ Si ves un auto rojo avanzá a la página 10<br>`,
 10: {
     text: `Cuidado, hay un auto rojo, y puede haber más. Te están vigilando.
      Será mejor que sigas estas instrucciones, caminá como si hubieras olvidado algo, 
-     doblá a la izquierda y avanza hasta encontrar una pared de frente.<br>`,
+     doblá a la izquierda y avanza hasta encontrar una pared de frente.<br><br><br>`,
     next: [
         {text: "Ve a la página 38.", page: 38}
     ]
@@ -145,7 +145,7 @@ Si ves un auto rojo avanzá a la página 10<br>`,
 Deberás avanzar hasta encontrar un limonero.  No lo tomes a la ligera, no es tarea fácil.
  Hay quienes olvidan lo que buscan y hay quienes olvidan haber encontrado lo que buscaban.<br> 
 Si lo encontraste, avanza a la página 12. <br> 
-    Si no lo encontraste, avanza a la página 13.<br>`,
+    Si no lo encontraste, avanza a la página 13.<br><br><br>`,
     next: [
         {text: "Página 12.", page: 12, condition: "encontrado"},
         {text: "Página 13.", page: 13, condition: "noEncontrado"}
@@ -158,7 +158,7 @@ Si lo encontraste, avanza a la página 12. <br>
 Has encontrado el limonero, sin embargo el dueño de la casa los cuida celosamente, habrá que buscar otra manera mantener los recuerdos. Dobla a la derecha y avanza una cuadra. 
 ¿Quieres acumular más recuerdos de este barrio? <br>
     Si deseas llevarte más recuerdos, ve a la página 25. <br>
-    Si decides que fue suficiente y temes comenzar a olvidar, ve a la página 26.<br>`,
+    Si decides que fue suficiente y temes comenzar a olvidar, ve a la página 26.<br><br><br>`,
     next: [
         {text: "Página 25.", page: 25, condition: "masRecuerdos"},
         {text: "Página 26.", page: 26, condition: "suficiente"}
@@ -169,7 +169,7 @@ Has encontrado el limonero, sin embargo el dueño de la casa los cuida celosamen
     text: `Llegaste hasta Av. los Incas y no encontraste el limonero. Quizás olvidaste que lo buscabas.
      Tal vez aún estemos a tiempo…¿Hay luz del sol?<br>
     Si hay luz del sol, ve a la página 14. <br>
-    Si no hay luz del sol, ve a la página 15.<br>`,
+    Si no hay luz del sol, ve a la página 15.<br><br><br>`,
     next: [
         {text: "Página 14.", page: 14, condition: "luzSol"},
         {text: "Página 15.", page: 15, condition: "noLuzSol"}
@@ -179,7 +179,7 @@ Has encontrado el limonero, sin embargo el dueño de la casa los cuida celosamen
 14: {
     text: `Por suerte todavía hay luz del sol,
      volvé sobre tus pasos por Cádiz y dobla a la izquierda en la segunda calle.
-     <br> `,
+     <br><br><br><br> `,
     next: [
         {text: "Ve a la página 16.", page: 16}
     ]
@@ -188,7 +188,7 @@ Has encontrado el limonero, sin embargo el dueño de la casa los cuida celosamen
 15: {
     text: `Parece que los fantasmas del olvido salieron a recorrer las calles, tal vez es mejor abandonar la búsqueda y volver otro día.
      Andate y no mires hacia atrás, recordá jamás acercarte a la garita de seguridad ni a ningún auto rojo estacionado. 
-     Mucha suerte. Esperamos pronto volver a verte. No nos olvides... Nosotros no lo haremos. Por hoy, es el fin de tu recorrido.`,
+     Mucha suerte. Esperamos pronto volver a verte. No nos olvides... Nosotros no lo haremos. Por hoy, es el fin de tu recorrido.<br><br>`,
     next: [
         {text: "Continuara...", page: 1} // Placeholder for next step
     ]
@@ -207,7 +207,7 @@ Escribe un recuerdo de tu niñez o de cualquier otro momento de tu vida y guárd
  en algunos años, por accidente quizás, lo encontrarás nuevamente, lo recordaras y volverás a
   revivir también tu recorrido por Parque Chas.
 
-Has descubierto nuestro secreto.`,
+Has descubierto nuestro secreto.<br><br>`,
     next: [
         {text: "Continuara...", page: 1} // Placeholder for next step
     ]
@@ -254,7 +254,7 @@ La guerra tiene muchas formas. La que habita nuestro querido Parque Chas no es m
 
 19: {
     text: `Al parecer alguien le puso un nombre a esta calle, luego lo olvidó y le puso otro, pasa mucho eso por aquí.
-     Donde Bauness se transforma en Cadiz observa las paredes con atención.`,
+     Donde Bauness se transforma en Cadiz observa las paredes con atención.<br><br><br>`,
     next: [
         {text: "Ve a la página 77.", page: 77}
     ]
@@ -264,7 +264,7 @@ La guerra tiene muchas formas. La que habita nuestro querido Parque Chas no es m
 20: {
     text: `Hay una plaza a tu costado y una garita de seguridad a la vista.<br>
     Si es correcto, ve a la página 31. <br>
-    Si no es así, ve a la página 39.<br>`,
+    Si no es así, ve a la página 39.<br><br><br>`,
     next: [
         {text: "Página 31.", page: 31, condition: "correcto"},
         {text: "Página 39.", page: 39, condition: "incorrecto"}
@@ -280,7 +280,7 @@ La guerra tiene muchas formas. La que habita nuestro querido Parque Chas no es m
      Podrás ver una casa muy peculiar, reten esa imagen. La lluvia lava los recuerdos. Es difícil luchar contra ella,
       habrás visto como corre desesperada la gente empapada bajo la lluvia. Corren porque llueve, están totalmente mojados y aún corren,
        y no recuerdan porque… Por algo inventaron los paraguas.
-     Es mejor abandonar antes de olvidarlo todo... Avanza hasta dejar el barrio, te esperamos otro día, no nos olvides.`,
+     Es mejor abandonar antes de olvidarlo todo... Avanza hasta dejar el barrio, te esperamos otro día, no nos olvides.<br>`,
     next: [ 
          {text: "Continuara...", page: 1} // Placeholder for next step
 
@@ -290,7 +290,7 @@ La guerra tiene muchas formas. La que habita nuestro querido Parque Chas no es m
 22: {
     text: `Por suerte no llueve, estás a salvo. Aprovecha,  dobla a la izquierda y avanza una cuadra. Hay un mural en la esquina. ¿Lo ves? <br>
     Si lo ves, ve a la página 23.<br> 
-    Si no lo ves, ve a la página 24.<br>`,
+    Si no lo ves, ve a la página 24.<br><br><br>`,
     next: [
         {text: "Página 23.", page: 23, condition: "loVes"},
         {text: "Página 24.", page: 24, condition: "noLoVes"}
@@ -327,14 +327,14 @@ Si prestás atención a las paredes, en el camino vas a encontrar un pequeño mo
 
 25: {
     text: `Continuá avanzando y vas a encontrar el punto de inicio, el lugar de donde partiste.
-     Buscá aquí un mosaico que no hayas visto en tu recorrido en alguna de las esquinas.`,
+     Buscá aquí un mosaico que no hayas visto en tu recorrido en alguna de las esquinas.<br><br><br>`,
     next: [
         {text: "Ve a la página 61.", page: 61}
     ]
 },
 
 26: {
-    text: `Doblá a la izquierda y avanza discretamente.`,
+    text: `Doblá a la izquierda y avanza discretamente.<br><br><br>`,
     next: [
         {text: "Ve a la página 16.", page: 16}
     ]
@@ -371,14 +371,14 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 },
 
 29: {
-    text: `Avanza hasta encontrar una plaza, presta mucha atención a tu alrededor.`,
+    text: `Avanza hasta encontrar una plaza, presta mucha atención a tu alrededor.<br><br><br>`,
     next: [
         {text: "Ve a la página 16.", page: 16}
     ]
 },
 
 30: {
-    text: `Dobla a la derecha y avanza una cuadra, luego dobla a la izquierda y avanza.`,
+    text: `Dobla a la derecha y avanza una cuadra, luego dobla a la izquierda y avanza.<br><br><br>`,
     next: [
         {text: "Ve a la página 19.", page: 19}
     ]
@@ -396,7 +396,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 },
 32: {
     text: `Avanza hasta encontrar una plaza, presta mucha atención a tu alrededor.
-    Avanza a la página 16.`,
+    Avanza a la página 16.<br><br><br>`,
     next: [
         {text: "Ve a la página 16.", page: 16}
     ]
@@ -406,7 +406,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
     text: `No te asustes, pero pueden estar observándote. No te acerques a la garita.
     Doblá a la derecha y avanzá dos cuadras.¿Ves flores desde aquí?
     Si ves flores, ve a la página 35. <br>
-    Si no ves flores, ve a la página 36.<br>`,
+    Si no ves flores, ve a la página 36.<br><br>`,
     next: [
         {text: "Página 35.", page: 35, condition: "siFlores"},
         {text: "Página 36.", page: 36, condition: "noFlores"}
@@ -416,19 +416,19 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 34: {
     text: `Aparentemente los niños están olvidando cómo jugar o nosotros no recordamos cómo se jugaba.
     Doblá a la izquierda. Continúa avanzando hasta encontrar una pared de frente. Luego dobla a la izquierda y avanza dos cuadras.
-    No te asustes, pero pueden estar observándote. No te acerques a la garita.`,
+    No te asustes, pero pueden estar observándote. No te acerques a la garita.<br>`,
     next: [
         {text: "Ve a la página 4.", page: 4}
     ]
 },
 35: {
-    text: `Si ves flores, dobla a la izquierda y avanza. `,
+    text: `Si ves flores, dobla a la izquierda y avanza.<br><br><br> `,
     next: [
         {text: "Ve a la página 37.", page: 37}
     ]
 },
 36: {
-    text: `Si no ves flores, o no recordás cómo son, doblá a la derecha y avanzá dos cuadras.`,
+    text: `Si no ves flores, o no recordás cómo son, doblá a la derecha y avanzá dos cuadras.<br><br><br>`,
     next: [
         {text: "Ve a la página 39.", page: 39}
     ]
@@ -437,7 +437,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 37: {
     text: `Continua avanzando hasta encontrar una casa de frente. Si llegaste a la esquina medusa digna de confusiones y
      gente perdida no te asustes,
-     continúa por la única calle contramano. Si no ves bifurcaciones, este mensaje no es para vos.`,
+     continúa por la única calle contramano. Si no ves bifurcaciones, este mensaje no es para vos.<br><br>`,
     next: [
         {text: "Ve a la página 38.", page: 38}
     ]
@@ -446,7 +446,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 38: {
     text: `Parece que el día se vuelve cada vez más complicado. ¿Llueve?<br>
     Si llueve, ve a la página 21. <br>
-    Si no llueve, ve a la página 22.<br>`,
+    Si no llueve, ve a la página 22.<br><br><br>`,
     next: [
         {text: "Página 21.", page: 21, condition: "llueve"},
         {text: "Página 22.", page: 22, condition: "noLlueve"}
@@ -455,7 +455,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 39: {
     text: `¿Ves un solo cartel de "loma de burro"? <br>
     Si ves un único cartel de "loma de burro", ve a la página 40. <br>
-    Si no ves un único cartel de "loma de burro", ve a la página 41.<br>`,
+    Si no ves un único cartel de "loma de burro", ve a la página 41.<br><br><br>`,
     next: [
         {text: "Página 40.", page: 40, condition: "siLomaBurro"},
         {text: "Página 41.", page: 41, condition: "noLomaBurro"}
@@ -465,7 +465,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 40: {
     text: `Si ves un único cartel de loma de burro observa si hay autos blancos a la vista. Nos están vigilando, te lo aseguro.<br>
     Si hay autos blancos a la vista, ve a la página 42.<br> 
-    Si no hay autos blancos a la vista, ve a la página 43.<br>`,
+    Si no hay autos blancos a la vista, ve a la página 43.<br><br>`,
     next: [
         {text: "Página 42.", page: 42, condition: "hayAutosBlancos"},
         {text: "Página 43.", page: 43, condition: "noHayAutosBlancos"}
@@ -475,7 +475,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
     text: `En caso de que no veas un único cartel de loma de burro… entonces quizás estés viendo un cartel de "Prohibido Estacionar".<br>
 
     Si ves un cartel de "Prohibido Estacionar", ve a la página 45. <br>
-    Si no ves un cartel de "Prohibido Estacionar", ve a la página 46.<br>`,
+    Si no ves un cartel de "Prohibido Estacionar", ve a la página 46.<br><br>`,
     next: [
         {text: "Página 45.", page: 45, condition: "siProhibido"},
         {text: "Página 46.", page: 46, condition: "noProhibido"}
@@ -484,7 +484,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 
 42: {
     text: `Si hay autos blancos a la vista dobla a la derecha y avanza dos cuadras.
-     Es que están usando autos blancos ahora, nos quieren despistar, pero sabemos que están ahí.<br>`,
+     Es que están usando autos blancos ahora, nos quieren despistar, pero sabemos que están ahí.<br><br><br>`,
     next: [
         {text: "Ve a la página 44.", page: 44}
     ]
@@ -492,7 +492,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 
 43: {
     text: `Parece que el camino es seguro, pero no te confíes, dobla a la izquierda y avanza. 
-    Dobla a la izquierda y avanza.<br>`,
+    Dobla a la izquierda y avanza.<br><br><br>`,
     next: [
         {text: "Ve a la página 37.", page: 37}
     ]
@@ -500,7 +500,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 
 44: {
     text: `Hay una plaza frente a ti. Presta mucha atención a donde estás. Orientate bien.
-     Ahora, busca el mosaico escondido en la plaza.<br>`,
+     Ahora, busca el mosaico escondido en la plaza.<br><br><br>`,
     next: [
         {text: "Ve a la página 75.", page: 75}
     ]
@@ -520,7 +520,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 46: {
     text: `¿Ves ventanas pequeñas en arco en la ochava y hacia la derecha se ven lejos señales de tránsito amarillas?<br>
     Si las ves, ve a la página 52. <br>
-    En caso contrario ve a la página 56.<br>`,
+    En caso contrario ve a la página 56.<br><br><br>`,
     next: [
         {text: "Página 52.", page: 52, condition: "siVentanas"},
         {text: "Página 56.", page: 56, condition: "noVentanas"}
@@ -530,7 +530,7 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 47: {
     text: `Si ves una casa parecida a la de la esquina del cartel de prohibido estacionar avanza dos cuadras. Al llegar presta atención: ¿Ves aves?<br>
     Si ves aves, ve a la página 49.<br> 
-    Si no ves aves, ve a la página 50.<br>`,
+    Si no ves aves, ve a la página 50.<br><br><br>`,
     next: [
         {text: "Página 49.", page: 49, condition: "siAves"},
         {text: "Página 50.", page: 50, condition: "noAves"}
@@ -538,14 +538,14 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
 },
 48: {
     text: `No ves ninguna casa parecida a la de la esquina del cartel de prohibido estacionar entonces dobla a la derecha
-     y avanza una cuadra.<br>`,
+     y avanza una cuadra.<br><br><br>`,
     next: [
         {text: "Ve a la página 51.", page: 51}
     ]
 },
 49: {
     text: `Si ves aves, es un camino seguro. 
-    Dobla a la derecha y avanza tres cuadras.<br> `,
+    Dobla a la derecha y avanza tres cuadras.<br><br><br> `,
     next: [
         {text: "Ve a la página 4.", page: 4}
     ]
@@ -555,14 +555,14 @@ Dobla a la derecha y avanza hasta la primer calle donde puedas doblar a la derec
     text: `Si no ves aves es un mal presagio, algo raro está sucediendo. Doblá a la izquierda y avanza dos cuadras.
 No permitas que nada te frene y por sobre todo aléjate de los autos rojos.<br>
 Doblá nuevamente a la izquierda y avanza hasta encontrar un cartel de prohibido estacionar.<br>
- Aquí dobla a la izquierda y avanza.`,
+ Aquí dobla a la izquierda y avanza.<br>`,
     next: [
         {text: "Ve a la página 66.", page: 66}
     ]
 },
 
 51: {
-    text: `Dobla a la derecha y avanza una cuadra. `,
+    text: `Dobla a la derecha y avanza una cuadra.<br><br><br> `,
     next: [
         {text: "Ve a la página 45.", page: 45}
     ]
@@ -581,31 +581,32 @@ Doblá nuevamente a la izquierda y avanza hasta encontrar un cartel de prohibido
 },
 
 53: {
-    text: `Dobla a la izquierda y avanza.`,
+    text: `Dobla a la izquierda y avanza.<br><br><br>`,
     next: [
         {text: "Ve a la página 37.", page: 37}
     ]
 },
 
 54: {
-    text: `Dobla a la derecha y avanza tres cuadras. `,
+    text: `Dobla a la derecha y avanza tres cuadras.<br><br><br> `,
     next: [
         {text: "Ve a la página 44.", page: 44}
     ]
 },
 
 55: {
-    text: `Encontraste y viste todo, pero no lo recuerdas, ya lo olvidaste. Continúa más allá de la Av. Triunvirato y deja el barrio.
-     Vuelve otro día te ayudaremos.<br>`,
+    text: `Encontraste y viste todo, pero no lo recuerdas, ya lo olvidaste.<br>
+     Continúa más allá de la Av. Triunvirato y deja el barrio.
+     Vuelve otro día, te ayudaremos.<br><br><br>`,
     next: [
         {text: "Fin del recorrido.", page: 1} // Placeholder for end
     ]
 },
 
 56: {
-    text: `Avanza en el mismo sentido hasta encontrar un limonero. 
+    text: `Avanza en el mismo sentido hasta encontrar un limonero.<br>
     Si no lo encuentras, ve a la página 55. <br>
-    Si lo encuentras, ve a la página 57.<br>`,
+    Si lo encuentras, ve a la página 57.<br><br><br>`,
     next: [
         {text: "Página 55.", page: 55, condition: "noLimonero"},
         {text: "Página 57.", page: 57, condition: "siLimonero"}
@@ -613,7 +614,7 @@ Doblá nuevamente a la izquierda y avanza hasta encontrar un cartel de prohibido
 },
 
 57: {
-    text: `Dobla a la izquierda y avanza. Observa las paredes, en el camino encontrarás un memorial.<br>`,
+    text: `Dobla a la izquierda y avanza. Observa las paredes, en el camino encontrarás un memorial.<br><br><br>`,
     next: [
         {text: "Página 63", page: 63} // Placeholder for end
     ]
@@ -623,7 +624,7 @@ Doblá nuevamente a la izquierda y avanza hasta encontrar un cartel de prohibido
     text: `30.000 compañeros detenidos desaparecidos presentes, ahora y siempre. <br>
     ¿Hoy hay niños jugando en la plaza?<br> 
     Si hay, ve a la página 37. <br>
-    Si no hay, ve a la página 59.<br>`,
+    Si no hay, ve a la página 59.<br><br>`,
     next: [
         {text: "Página 37.", page: 37, condition: "hayNiños"},
         {text: "Página 59.", page: 59, condition: "noHayNiños"}
@@ -631,7 +632,7 @@ Doblá nuevamente a la izquierda y avanza hasta encontrar un cartel de prohibido
 },
 
 59: {
-    text: `Dobla a la izquierda y avanza, aparenta estar buscando algo de vez en cuando.<br>`,
+    text: `Dobla a la izquierda y avanza, aparenta estar buscando algo de vez en cuando.<br><br><br>`,
     next: [
         {text: "Ve a la página 4.", page: 4}
     ]
@@ -639,7 +640,7 @@ Doblá nuevamente a la izquierda y avanza hasta encontrar un cartel de prohibido
 
 60: {
     text: `Es mejor intentar despistar a los agentes del olvido, doblá a la derecha, avanzá media cuadra.
-     Hace como que olvidaste algo y regresá. Detenete pensativo en la esquina observando la plaza a tu derecha.<br>`,
+     Hace como que olvidaste algo y regresá. Detenete pensativo en la esquina observando la plaza a tu derecha.<br><br><br>`,
     next: [
         {text: "Ve a la página 8.", page: 8}
     ]
@@ -697,7 +698,7 @@ Con este acto, los habitantes del barrio retribuyeron el enorme cariño que Mign
 },
 65: {
     text: `Todavía tenemos muchas cosas planeadas para vos, pero tal vez las fuerzas del olvido están ejerciendo
-     fuertemente sobre tu experiencia. Vamos a intentarlo una vez más…<br>`,
+     fuertemente sobre tu experiencia. Vamos a intentarlo una vez más…<br><br>`,
     next: [
         {text: "Ve a la página 4.", page: 4}
     ]
@@ -731,7 +732,7 @@ Fin del recorrido.<br>`,
     text: `Esperamos que hayas tenido un buen paseo y que nadie te haya molestado. ¿No te acercaste a la garita verdad?
     Este viaje recién empieza así que todavía estás a tiempo de elegir si querés realizar nuestro recorrido o quizás… ya te arrepentiste. 
     Si querés comenzar dobla a la izquierda y avanzá una cuadra.<br>
-Ir a la página 8 De lo contrario ir a la página 15.`,
+Ir a la página 8. De lo contrario ir a la página 15.<br>`,
     next: [
         {text: "Página 8.", page: 8},
         {text: "Página 15.", page: 15},
@@ -742,7 +743,7 @@ Ir a la página 8 De lo contrario ir a la página 15.`,
     text: `Continuemos… <br>
     ¿Estás seguro? <br>
     Si conoces el misterio de la línea 187, ir a la página 27.<br> 
-    Si no lo conoces, ir a la página 28.<br>`,
+    Si no lo conoces, ir a la página 28.<br><br><br>`,
     next: [
         {text: "Página 27.", page: 27, condition: "siMisterio"},
         {text: "Página 28.", page: 28, condition: "noMisterio"}
@@ -752,7 +753,7 @@ Ir a la página 8 De lo contrario ir a la página 15.`,
 70: {
     text: `¿Acaso conoces el gran mito de Parque Chas?<br> 
     Si lo conoces, ir a la página 17. <br>
-    Si no, ir a la página 18.<br>`,
+    Si no, ir a la página 18.<br><br><br>`,
     next: [
         {text: "Página 17.", page: 17, condition: "siMito"},
         {text: "Página 18.", page: 18, condition: "noMito"}
@@ -763,7 +764,7 @@ Ir a la página 8 De lo contrario ir a la página 15.`,
     text: `¿Encontraste la casa verde o te perdiste? 
     Tal vez la viste y ya la olvidaste, los fantasmas del olvido rondan estas calles. 
     Si la encontraste, ve a la página 68.<br> 
-    Si no, ve a la página 15.<br>`,
+    Si no, ve a la página 15.<br><br><br>`,
     next: [
         {text: "Página 68.", page: 68, condition: "siEncontraste"},
         {text: "Página 15.", page: 15, condition: "noEncontraste"}
@@ -774,14 +775,14 @@ Ir a la página 8 De lo contrario ir a la página 15.`,
 72: {
     text: `Ahora avanza una cuadra en el sentido contrario al de cuando iniciaste el recorrido.
      Quizás en el camino veas unos pañuelos a tu derecha.
-     Ve a la página 16.`,
+     Ve a la página 16.<br><br><br>`,
     next: [
         {text: "Página 16.", page: 16}
     ]
 },
 73: {
     text: `30.000 compañeros detenidos desaparecidos presentes; ahora y siempre.
-Vuelve al punto exacto donde habías llegado antes de entrar a la plaza. Luego avanza en el mismo sentido en que lo venías haciendo.`,
+Vuelve al punto exacto donde habías llegado antes de entrar a la plaza. Luego avanza en el mismo sentido en que lo venías haciendo.<br><br>`,
     next: [
         {text: "Ve a la página 19.", page: 19}
     ]
@@ -789,7 +790,7 @@ Vuelve al punto exacto donde habías llegado antes de entrar a la plaza. Luego a
 74: {
     text: `Seguiste tu camino y llegaste a la plaza del olvido, no permanezcas mucho tiempo ahí ni bebas agua en ese lugar.
      Continúa caminando por la misma calle hasta terminar la plaza.
-     Buscá el mosaico escondido y vuelve al punto donde habías llegado.`,
+     Buscá el mosaico escondido y vuelve al punto donde habías llegado.<br>`,
     next: [
         {text: "Ve a la página 76.", page: 76}
     ]
@@ -799,7 +800,7 @@ Vuelve al punto exacto donde habías llegado antes de entrar a la plaza. Luego a
     text: `
 Mosaico pañuelo de Madres de Plaza de Mayo. “En Argentina, las locas de Plaza de Mayo, serán un ejemplo de salud mental, porque ellas se negaron a olvidar en los tiempos de amnesia obligatoria.” Eduardo Galeano
 El mural fue diseñado en el año 2016 por Nacional Mosaico Veneciano que trabaja para contribuir al arte del histórico proyecto nacional, popular y latinoamericano en busca de la identidad cultural latinoamericana. Memoria, diversidad, respeto cultural,
- inclusión y democratización del acceso al arte en el espacio público son algunos de los valores que son fundamento de su trabajo.`,
+ inclusión y democratización del acceso al arte en el espacio público son algunos de los valores que son fundamento de su trabajo.<br>`,
     next: [
        
         {text: "Ve a la página 73.", page: 73, condition: "desde44"}
@@ -811,7 +812,7 @@ El mural fue diseñado en el año 2016 por Nacional Mosaico Veneciano que trabaj
     text: `
 Mosaico pañuelo de Madres de Plaza de Mayo. “En Argentina, las locas de Plaza de Mayo, serán un ejemplo de salud mental, porque ellas se negaron a olvidar en los tiempos de amnesia obligatoria.” Eduardo Galeano
 El mural fue diseñado en el año 2016 por Nacional Mosaico Veneciano que trabaja para contribuir al arte del histórico proyecto nacional, popular y latinoamericano en busca de la identidad cultural latinoamericana. Memoria, diversidad, respeto cultural,
- inclusión y democratización del acceso al arte en el espacio público son algunos de los valores que son fundamento de su trabajo.`,
+ inclusión y democratización del acceso al arte en el espacio público son algunos de los valores que son fundamento de su trabajo.<br>`,
     next: [
        
     
@@ -822,8 +823,9 @@ El mural fue diseñado en el año 2016 por Nacional Mosaico Veneciano que trabaj
 77: {
     text: `Memorial Eduardo Mignona. Una mañana regada de sol, un coro de gorriones, una calle curva y una hilera de frondosos plátanos dieron marco natural al íntimo y emocionado homenaje realizado al escritor y cineasta Eduardo Mignogna, que abandonó físicamente este mundo en 2006.
 Con este acto, los habitantes del barrio retribuyeron el enorme cariño que Mignogna tenía por Parque Chas, donde, según sus relatos;
- vivió los momentos más felices de su infancia. También, fue un reconocimiento a su obra literaria y cinematográfica, y al compromiso social y solidario por sus trabajos.
-    `,
+ vivió los momentos más felices de su infancia. También, fue un reconocimiento a su obra literaria y cinematográfica,
+  y al compromiso social y solidario por sus trabajos.
+    <br>`,
     next: [
          {text: "Ve a la página 11.", page: 11, condition: "desde19"}
     ]
