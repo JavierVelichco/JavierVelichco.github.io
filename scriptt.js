@@ -1,4 +1,9 @@
-const pages = {
+        // Variable global para almacenar la página anterior
+        let previousPage = null;
+        let currentPage = 1;
+
+        // Objeto de las páginas
+        const pages = {
 
 
 1: {
@@ -832,28 +837,45 @@ Con este acto, los habitantes del barrio retribuyeron el enorme cariño que Mign
 },
 
 }
-let currentPage = 1;
 
-function renderPage(page) {
-    const content = document.getElementById('content');
-    const buttons = document.getElementById('buttons');
-     const pageNumber = document.getElementById('page-number'); // Obtiene el div para el número de página
-    
-    content.innerHTML = `<p>${pages[page].text}</p>`;
-    buttons.innerHTML = '';
+        // Función para cargar una página y mostrarla
+        function renderPage(page) {
+            const content = document.getElementById('content');
+            const buttons = document.getElementById('buttons');
+            const pageNumber = document.getElementById('page-number');
+            const backButton = document.getElementById('back-button'); // Botón de regresar
 
-     // Actualiza el número de página
-    pageNumber.innerHTML = `Página: ${page}`;
+            // Mostrar el contenido de la página
+            content.innerHTML = `<p>${pages[page].text}</p>`;
+            buttons.innerHTML = '';
 
-    pages[page].next.forEach(next => {
-        const button = document.createElement('button');
-        button.textContent = next.text;
-        button.onclick = () => {
-            currentPage = next.page;
-            renderPage(currentPage);
-        };
-        buttons.appendChild(button);
-    });
-}
+            // Actualizar el número de página
+            pageNumber.innerHTML = `Página: ${page}`;
 
-renderPage(currentPage);
+            // Mostrar las opciones de la página
+            pages[page].next.forEach(next => {
+                const button = document.createElement('button');
+                button.textContent = next.text;
+                button.onclick = () => {
+                    // Guardar la página actual como la anterior antes de ir a la siguiente
+                    previousPage = currentPage;
+                    currentPage = next.page;
+                    renderPage(currentPage);
+                };
+                buttons.appendChild(button);
+            });
+
+            // Mostrar el botón de "Regresar" solo si hay una página anterior
+            if (previousPage !== null) {
+                backButton.style.display = 'inline-block'; // Mostrar el botón
+                backButton.onclick = () => {
+                    renderPage(previousPage); // Regresar a la página anterior
+                    previousPage = null; // Limpiar la variable previousPage para evitar ciclos
+                };
+            } else {
+                backButton.style.display = 'none'; // Ocultar el botón si no hay página anterior
+            }
+        }
+
+        // Cargar la primera página al iniciar
+        renderPage(currentPage);
